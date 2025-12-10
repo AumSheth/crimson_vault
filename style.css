@@ -1,0 +1,1440 @@
+/* ================================
+   General Styles
+   ================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #cce6ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================================
+   Container
+   ================================ */
+.container {
+  background-color: #ffffff;
+  border: 3px solid #007acc;
+  border-radius: 12px;
+  padding: 60px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px #007acc, 0 0 25px #007acc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ================================
+   Logo
+   ================================ */
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* ================================
+   Form Layout
+   ================================ */
+.form-container {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* ================================
+   Inputs and Selects
+   ================================ */
+input, select {
+  padding: 10px;
+  border: 1px solid #007acc;
+  border-radius: 4px;
+  background-color: #f5faff;
+  width: 100%;
+}
+
+/* ================================
+   Button
+   ================================ */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007acc;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005c99;
+}
+
+/* ================================
+   Password Field with Toggle
+   ================================ */
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  padding-right: 40px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #007acc;
+  user-select: none;
+}
+
+/* ================================ Admin Dashboard Styles ================================ */
+
+.dashboard-body {
+    background-color: #f2f8ff;
+    display: block;
+    height: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header img {
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin-right: 15px;
+}
+
+/* ===== DASHBOARD GRID ===== */
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    background-color: #004d80;
+    color: white;
+    padding: 20px;
+    height: 100vh;          /* full viewport height */
+    position: sticky;       /* sticks when scrolling */
+    top: 0;                 /* stick to top */
+    overflow-y: auto;       /* allow sidebar content to scroll if too long */
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+/* ===== MAIN CONTENT ===== */
+.content {
+    padding: 30px;
+    background-color: white;
+    min-height: 100vh;      /* ensure content height for scrolling */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #007acc;
+    border-bottom: 2px solid #cce0ff;
+    padding-bottom: 5px;
+}
+
+/* ===== TABLES ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e6f0ff;
+}
+
+/* ===== LANGUAGE TOGGLE ===== */
+.lang-toggle {
+    float: right;
+    margin-top: -45px;
+    margin-right: 20px;
+}
+
+/* ===== TABLE CONTAINER ===== */
+.table-container {
+    max-height: 600px;
+    overflow-y: auto;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, 
+.table-container td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-container tr:hover {
+    background: #f9f9f9;
+}
+
+/* ================================
+   Header & Nav Styles
+   ================================ */
+#main-header {
+  background-color: #007acc;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-header .header-left {
+  display: flex;
+  align-items: center;
+  width: 80px;
+}
+
+#main-header #logo {
+  height: 80px;
+  margin-right: 15px;
+}
+
+#main-header h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+#main-header .header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#main-header #logout-btn {
+  background: #005c99;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#main-header #logout-btn:hover {
+  background: #004d80;
+}
+
+/* ================================
+   Navigation Styles
+   ================================ */
+#main-nav {
+  background-color: #004d80;
+}
+
+#main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#main-nav ul li {
+  margin: 0;
+}
+
+#main-nav ul li a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  position: relative; /* for underline animation */
+  transition: color 0.3s ease;
+}
+
+/* Underline grows from center */
+#main-nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 6px; /* adjust underline distance */
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+#main-nav ul li a:hover {
+  color: #cce6ff; /* subtle text color change */
+}
+
+#main-nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* ================================
+   Footer Styles
+   ================================ */
+#main-footer {
+  background-color: #004d80;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin: 0; /* no bottom margin */
+  position: fixed; /* keep it fixed at bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* ensures it stays above body content */
+}
+
+/* Footer Links */
+#main-footer .footer-links a {
+  color: #cce6ff;
+  text-decoration: none;
+  margin: 0 5px;
+  position: relative; /* needed for custom underline */
+}
+
+/* Center-Out Underline Animation */
+#main-footer .footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px; /* space below text */
+  width: 0;
+  height: 2px;
+  background-color: #cce6ff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+#main-footer .footer-links a:hover::after {
+  width: 100%;
+}
+
+/* ================================
+   Responsive
+   ================================ */
+@media (max-width: 768px) {
+  #main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #main-nav ul {
+    flex-direction: column;
+  }
+}
+
+/* ================================
+   Dashboard Action Tiles
+   ================================ */
+.action-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 25px 15px;
+    background: #ffffff;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+/* Hover effect: expand + blue background + white text */
+.tile:hover {
+    background: #44b0f9;
+    color: #0127ff;
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Ensure icon + text also turn white on hover */
+.tile:hover .tile-icon,
+.tile:hover .tile-text {
+    color: #fff;
+}
+
+.tile-icon {
+    font-size: 30px;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.tile-text {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+/* ================================
+   About Page
+   ================================ */
+body#about-page {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #cce6ff;
+}
+
+#main-header {
+  background-color: #007acc;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main-header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+#main-header #logout-btn {
+  background: #005c99;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#main-header #logout-btn:hover {
+  background: #004d80;
+}
+
+#main-nav {
+  background-color: #004d80;
+}
+#main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+#main-nav li a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+#main-nav li a:hover {
+  background-color: #006bb3;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #ffffff;
+  border: 3px solid #007acc;
+  border-radius: 12px;
+  padding: 50px;
+  box-shadow: 0 0 15px #007acc, 0 0 25px #007acc;
+}
+.about-container h2, 
+.about-container h3 {
+  color: #007acc;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.about-container h2 {
+  font-size: 28px;
+  border-bottom: 2px solid #cce0ff;
+  padding-bottom: 8px;
+}
+.about-container p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+.about-container ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.about-container ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Footer */
+#main-footer {
+  background-color: #004d80;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 40px;
+}
+#main-footer .footer-links a {
+  color: #cce6ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+#main-footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   Developer Page
+   ================================ */
+body#developer-page {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #cce6ff;
+}
+
+.developer-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #ffffff;
+  border: 3px solid #007acc;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 0 15px #007acc, 0 0 25px #007acc;
+  text-align: center;
+}
+
+.developer-section h2 {
+  color: #007acc;
+  font-size: 28px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #cce0ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.developer-photo {
+  width: 160px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #007acc;
+  margin: 20px 0;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.developer-section h3 {
+  color: #004d80;
+  margin: 15px 0 10px;
+}
+
+.developer-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 auto 15px;
+  max-width: 900px;
+}
+
+.skills-list {
+  margin: 20px auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list li {
+  background: #007acc;
+  color: white;
+  padding: 8px 15px;
+  margin: 8px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-links {
+  margin-top: 25px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a.facebook:hover { background: #1877f2; color: white; }
+.social-icons a.instagram:hover { background: #e1306c; color: white; }
+.social-icons a.snapchat:hover { background: #fffc00; color: black; }
+.social-icons a.linkedin:hover { background: #0077b5; color: white; }
+.social-icons a.x:hover { background: #000000; color: white; }
+.social-icons a.threads:hover { background: #000000; color: white; }
+
+.contact-info {
+  font-size: 16px;
+  color: #333;
+  margin-top: 15px;
+}
+
+/* ================================
+   Feedback Page
+   ================================ */
+body#feedback-page {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #cce6ff;
+}
+
+.feedback-section {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #ffffff;
+  border: 3px solid #007acc;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 0 15px #007acc, 0 0 25px #007acc;
+  text-align: center;
+}
+
+.feedback-section h2 {
+  color: #007acc;
+  margin-bottom: 20px;
+}
+
+.feedback-section textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border: 2px solid #007acc;
+  border-radius: 8px;
+  resize: none;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.feedback-section button {
+  background: #007acc;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.feedback-section button:hover {
+  background: #005c99;
+}
+/* Responsive table fixes for feedback-section pages */
+.feedback-section .case-select {
+  width: 100%;
+  max-width: 760px;
+  padding: 10px;
+  margin: 8px auto 18px;
+  border: 2px solid #007acc;
+  border-radius: 8px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.feedback-section .btn-view {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+  background: #007acc;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Horizontal scrolling wrapper */
+.feedback-section .table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px; /* visual breathing room */
+}
+
+/* Table styling: fixed layout so columns wrap nicely */
+.feedback-section table {
+  width: 100%;
+  min-width: 760px;           /* allow horizontal scroll on small screens */
+  border-collapse: collapse;
+  table-layout: fixed;        /* important — lets cells wrap evenly */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.feedback-section table th,
+.feedback-section table td {
+  padding: 12px 10px;
+  border: 1px solid #007acc;
+  vertical-align: top;
+  text-align: left;
+  word-break: break-word;     /* break long words */
+  white-space: normal;        /* allow wrapping */
+  box-sizing: border-box;
+}
+
+/* Header look */
+.feedback-section table thead th {
+  background: #007acc;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Smaller padding on narrow screens */
+@media (max-width: 600px) {
+  .feedback-section table th,
+  .feedback-section table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .feedback-section table { min-width: 640px; }
+}
+
+
+/* ================================
+   Privacy & Terms Pages
+   ================================ */
+.privacy-section,
+.terms-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  padding: 40px 20px;
+}
+
+.privacy-container,
+.terms-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #333;
+}
+
+.privacy-container h2,
+.terms-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.privacy-container h3,
+.terms-container h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.privacy-container p,
+.terms-container p {
+  margin-bottom: 15px;
+}
+
+.privacy-container ul,
+.terms-container ul {
+  margin: 10px 0 20px 20px;
+  list-style: disc;
+}
+
+/* ================================
+   Support Page
+   ================================ */
+.form-section.support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #f5f6fa;
+  padding: 40px 20px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.form-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.form-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-box input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-box input[type="text"]:focus {
+  border-color: #0984e3;
+  box-shadow: 0 0 4px rgba(9, 132, 227, 0.4);
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background: #0984e3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-box button:hover {
+  background: #0873c4;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #dfe6e9;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* ================================
+   Cases Page Styles
+   ================================ */
+.cases-section {
+  margin-top: 20px;
+}
+
+.cases-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: #fff;
+  border: 2px solid #007acc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cases-table th, 
+.cases-table td {
+  border: 1px solid #cce0ff;
+  padding: 12px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.cases-table th {
+  background: #e6f3ff;
+  color: #004d80;
+  font-weight: bold;
+}
+
+.cases-table td {
+  background: #fafcff;
+  color: #333;
+}
+
+.cases-table tr:hover td {
+  background: #f5faff;
+}
+
+.cases-table td.description {
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+.cases-table ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.cases-table li {
+  margin-bottom: 6px;
+}
+
+.cases-table .btn {
+  display: inline-block;
+  margin: 5px 3px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #007acc;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cases-table .btn:hover {
+  background: #005c99;
+}
+
+.edit-form {
+  margin-top: 12px;
+  padding: 15px;
+  border: 1px solid #007acc;
+  background: #f0f8ff;
+  border-radius: 8px;
+}
+
+.edit-form h4 {
+  margin-bottom: 8px;
+  color: #007acc;
+}
+
+.edit-form input,
+.edit-form textarea,
+.edit-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #007acc;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f9fcff;
+}
+
+.edit-form button {
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.edit-form button:hover {
+  background: #005c99;
+}
+
+/* ================================
+   Checkbox Filter Styling
+   ================================ */
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-checkbox input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #007acc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.filter-checkbox input[type="checkbox"]:checked {
+  background-color: #007acc;
+  border-color: #005c99;
+}
+
+.filter-checkbox input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  font-size: 12px;
+  color: white;
+}
+
+.filter-checkbox:hover input[type="checkbox"] {
+  border-color: #005c99;
+}
+
+/* ================================
+   Accused Form Section (Redesigned)
+   ================================ */
+.form-section.accused {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 50px 50px;
+  background: #ffffff;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 122, 204, 0.25);
+}
+
+/* Title */
+.form-section.accused h2 {
+  text-align: center;
+  color: #007acc;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+/* Labels */
+.form-section.accused form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #004d80;
+  font-size: 14px;
+}
+
+/* Inputs, Selects, Textarea */
+.form-section.accused form input,
+.form-section.accused form select,
+.form-section.accused form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #cce0ff;
+  border-radius: 10px;
+  background-color: #f9fcff;
+  font-size: 15px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Focus effect */
+.form-section.accused form input:focus,
+.form-section.accused form select:focus,
+.form-section.accused form textarea:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 6px rgba(0, 122, 204, 0.4);
+  outline: none;
+}
+
+/* Textarea specific */
+.form-section.accused form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+.form-section.accused form button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #007acc, #005c99);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-section.accused form button:hover {
+  background: linear-gradient(135deg, #005c99, #004d80);
+  transform: translateY(-2px);
+}
+/* =======================
+   Dashboard Common Styles
+   ======================= */
+
+/* Content wrapper */
+.dashboard-content {
+    padding: 20px;
+}
+
+/* Section Headings */
+.dashboard-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dashboard-content h3 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Tile container */
+.action-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-left: 25;
+    margin-top: 20px;
+}
+
+/* Each tile */
+.tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+    background: #f8f9fa;
+    border: 2px solid #1295a1; /* subtle border */
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out; /* smooth hover transition */
+}
+
+/* Hover effect */
+.tile:hover {
+    background: #1295a1; /* background color change */
+    color: white; /* text color change */
+    transform: translateY(-5px); /* slight lift */
+    box-shadow: 0 0 15px #1295a1, 0 0 30px #1295a1; /* glowing border */
+    border-color: #1295a1; /* match border with glow */
+}
+
+/* Icon styling */
+.tile-icon {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+/* Text styling */
+.tile-text {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Table styling */
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.dashboard-table th {
+    background: #f1f1f1;
+}
+
+/* Grid container for accused cards */
+.accused-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual accused card */
+.accused-card {
+  background: #f9f9f9;
+  border: 2px solid #007acc;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.accused-card:hover {
+  transform: translateY(-4px);
+  background: #eef7ff;
+}
+
+.accused-card p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+/* Grid container for notifications */
+.notification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Notification card */
+.notification-card {
+  background: #f9f9f9;
+  border: 2px solid #007acc;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.notification-card:hover {
+  transform: translateY(-4px);
+  background: #eef7ff;
+}
+
+.notification-card p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+/* Grid container for notifications */
+.notification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Notification card */
+.notification-card {
+  background: #f9f9f9;
+  border: 2px solid #007acc;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.notification-card:hover {
+  transform: translateY(-4px);
+  background: #eef7ff;
+}
+
+.notification-card p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+/* ================================
+   Tile hover override (place at EOF of style.css)
+   ================================ */
+
+/* Base state (ensure we target anchor tiles in the action-tiles area) */
+.dashboard-content .action-tiles a.tile,
+.action-tiles a.tile {
+  background: #ffffff;
+  color: #333;
+  transition: background 240ms ease, transform 240ms ease, box-shadow 240ms ease, color 240ms ease;
+  transform-origin: center;
+  will-change: transform, background-color;
+  text-decoration: none;
+}
+
+/* Hover / focus states — stronger specificity */
+.dashboard-content .action-tiles a.tile:hover,
+.dashboard-content .action-tiles a.tile:focus,
+.action-tiles a.tile:hover,
+.action-tiles a.tile:focus {
+  background: linear-gradient(135deg, #007acc 0%, #005c99 100%) !important;
+  color: #ffffff !important;
+  transform: scale(1.2);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.16);
+  z-index: 2;
+  outline: none;
+}
+
+/* Make sure inner elements use inherited color */
+.dashboard-content .action-tiles a.tile .tile-icon,
+.dashboard-content .action-tiles a.tile .tile-text,
+.action-tiles a.tile .tile-icon,
+.action-tiles a.tile .tile-text {
+  color: inherit;
+  transition: color 240ms ease;
+}
+
+/* If any child has a background that hides the parent's bg, make them transparent */
+/* If any child has a background that hides the parent's bg, make them transparent 
+   EXCEPT the badges */
+.dashboard-content .action-tiles a.tile *:not(.case-badge):not(.judgment-badge):not(.accused-badge):not(.notif-badge):not(.progress-badge){
+  background: transparent !important;
+}
+
+/* Optional: ensure visited/active anchors don't recolor text unexpectedly */
+.action-tiles a.tile:link,
+.action-tiles a.tile:visited {
+  color: inherit;
+}
+/* ================================
+   Dashboard Badges (Fixed)
+   ================================ */
+.tile {
+  position: relative; /* ensure badge is positioned relative to tile */
+  overflow: visible;  /* allow badge to overflow if needed */
+}
+
+.case-badge,
+.judgment-badge,
+.accused-badge {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background-color: #e63946; /* Red background */
+  color: #ffffff;             /* White text */
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 50%;
+  min-width: 22px;
+  text-align: center;
+  line-height: 1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  z-index: 999;              /* ensure it's above hover background */
+  pointer-events: auto;       /* allow hover if needed */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional hover pop */
+.case-badge:hover,
+.judgment-badge:hover,
+.accused-badge:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.notif-badge {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background-color: #e63946; /* Red background */
+    color: #ffffff;             /* White text */
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 50%;
+    min-width: 22px;
+    text-align: center;
+    line-height: 1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    z-index: 999;
+    pointer-events: auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notif-badge:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+.progress-badge {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background-color: #e63946; /* Red background */
+    color: #ffffff;             /* White text */
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 50%;
+    min-width: 22px;
+    text-align: center;
+    line-height: 1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    z-index: 999;
+    pointer-events: auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.progress-badge:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
