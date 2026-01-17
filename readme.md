@@ -41,7 +41,7 @@ Prerequisites
 •	Apache / Nginx
 •	XAMPP or WAMP
 Local Setup
-git clone https://github.com/your-username/crimson-vault.git
+git clone https://github.com/AumSheth/crimson_vault.git
 1.	Move project to htdocs
 2.	Import database (crimson_vault.sql)
 3.	Configure database credentials
@@ -67,4 +67,5 @@ ________________________________________
 📄 License
 This project is open for educational and research purposes.
 Commercial use requires permission.
+
 
