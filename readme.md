@@ -58,13 +58,13 @@
 
 **Local Setup**
 
-git clone https://github.com/your-username/crimson-vault.git
+git clone https://github.com/AumSheth/crimson_vault.git
 
 1. Move project to htdocs
 1. Import database (crimson\_vault.sql)
 1. Configure database credentials
 1. Start Apache & MySQL
-1. Open http://localhost/crimson-vault
+1. Open http://localhost/crimson_vault
 -----
 **🧪 Testing**
 
@@ -107,5 +107,6 @@ Commercial use requires permission.
 ![](images/Aspose.Words.f71d763c-7415-4c4d-ad69-dad09c5c4d76.008.png)
 
 ![](images/Aspose.Words.f71d763c-7415-4c4d-ad69-dad09c5c4d76.009.png)![](Aspose.Words.f71d763c-7415-4c4d-ad69-dad09c5c4d76.010.png)
+
 
 
