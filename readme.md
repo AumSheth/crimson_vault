@@ -98,15 +98,7 @@ Commercial use requires permission.
 
 
 ![](images/Aspose.Words.f71d763c-7415-4c4d-ad69-dad09c5c4d76.002.png)![](Aspose.Words.f71d763c-7415-4c4d-ad69-dad09c5c4d76.003.png)
-
-
-
-
 ![](images/Aspose.Words.f71d763c-7415-4c4d-ad69-dad09c5c4d76.004.png)![](Aspose.Words.f71d763c-7415-4c4d-ad69-dad09c5c4d76.005.png)
-
-
-
-
 
 ![](images/Aspose.Words.f71d763c-7415-4c4d-ad69-dad09c5c4d76.006.png)
 
@@ -115,4 +107,5 @@ Commercial use requires permission.
 ![](images/Aspose.Words.f71d763c-7415-4c4d-ad69-dad09c5c4d76.008.png)
 
 ![](images/Aspose.Words.f71d763c-7415-4c4d-ad69-dad09c5c4d76.009.png)![](Aspose.Words.f71d763c-7415-4c4d-ad69-dad09c5c4d76.010.png)
+
 
